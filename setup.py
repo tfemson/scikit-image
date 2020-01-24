@@ -13,17 +13,17 @@ from distutils.command.sdist import sdist
 from distutils.errors import CompileError, LinkError
 
 
-DISTNAME = 'scikit-image'
-DESCRIPTION = 'Image processing in Python'
-MAINTAINER = 'Stefan van der Walt'
-MAINTAINER_EMAIL = 'stefan@sun.ac.za'
+DISTNAME = 'vmn-scikit-image'
+DESCRIPTION = 'A Slightly Modified Image processing in Python'
+MAINTAINER = 'Femson Adeyeye'
+MAINTAINER_EMAIL = 'tfemson@gmail.com'
 URL = 'https://scikit-image.org'
 LICENSE = 'Modified BSD'
 DOWNLOAD_URL = 'https://scikit-image.org/docs/stable/install.html'
 PROJECT_URLS = {
-    "Bug Tracker": 'https://github.com/scikit-image/scikit-image/issues',
+    "Bug Tracker": 'https://github.com/tfemson/scikit-image/issues',
     "Documentation": 'https://scikit-image.org/docs/stable/',
-    "Source Code": 'https://github.com/scikit-image/scikit-image'
+    "Source Code": 'https://github.com/tfemson/scikit-image'
 }
 
 with open('README.md') as f:

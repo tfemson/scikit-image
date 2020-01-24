@@ -25,7 +25,8 @@ def file_or_url_context(resource_name):
         _, ext = os.path.splitext(url_components.path)
         try:
             with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as f:
-                u = urllib.request.urlopen(resource_name)
+                req = urllib.request.Request(resource_name, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 Safari/537.36'})
+                u = urllib.request.urlopen(req)
                 f.write(u.read())
             # f must be closed before yielding
             yield f.name
